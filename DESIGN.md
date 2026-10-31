@@ -11,11 +11,13 @@ Jika ada konflik dengan keputusan agen, dokumen ini menang. Jika sebuah situasi 
 Terasa seperti majalah desain atau jurnal pribadi yang rapi, bukan template SaaS. Kertas hangat, tinta pekat, satu warna aksen, tipografi yang berkarakter, dan banyak ruang kosong. Kesan yang dituju: **tenang, teliti, dewasa, personal**.
 
 ### Tiga prinsip
+
 1. **Tipografi yang memimpin.** Hierarki dibangun dari ukuran, berat, dan jenis huruf, bukan dari kotak, bayangan, atau warna.
 2. **Satu aksen, dipakai hemat.** Warna aksen hanya untuk hal yang bisa diklik atau harus diperhatikan.
 3. **Struktur terlihat.** Garis tipis (hairline), penomoran bagian, dan grid yang konsisten menggantikan dekorasi.
 
 ### Yang ingin dirasakan pengunjung
+
 "Orang ini rapi, punya selera, dan tahu apa yang ia kerjakan", bukan "ini template yang diisi."
 
 ---
@@ -24,26 +26,26 @@ Terasa seperti majalah desain atau jurnal pribadi yang rapi, bukan template SaaS
 
 Pola berikut **dilarang**. Jika agen menghasilkannya, tolak dan perbaiki.
 
-| Dilarang | Alasan | Gantinya |
-|---|---|---|
-| Gradien ungu-biru/pink, "aurora", blob blur di latar | Penanda paling jelas desain AI generik | Warna datar, kertas hangat |
-| Font Inter, Roboto, Poppins, Arial, system-ui sebagai identitas | Pasaran | Pasangan font di bagian 4 |
-| Hero tengah dengan judul besar + dua tombol + gambar mockup | Template | Hero rata kiri, asimetris, editorial |
-| Kartu berbayangan tebal, sudut sangat bulat (`rounded-3xl`) di mana-mana | Gaya "kartu SaaS" | Hairline border, radius kecil |
-| Glassmorphism, `backdrop-blur` dekoratif | Usang dan berat | Permukaan solid |
-| Ikon emoji di judul atau poin (🚀 ✨ 💡) | Tidak profesional | Tanpa ikon, atau ikon garis tipis |
-| Ikon dalam lingkaran berwarna di atas tiap kartu fitur | Klise | Penomoran `01`, `02`, teks saja |
-| Grid 3 kolom "fitur" berisi ikon + judul + kalimat | Klise | Daftar berbaris dengan garis pemisah |
-| Teks "gradient" pada judul | Klise | Warna tinta solid |
-| Animasi masuk berlebihan (bounce, flip, parallax berat) | Mengganggu | Fade + geser 8 px, sekali |
-| Badge neon, glow, bayangan berwarna | Murahan | Badge garis tipis, netral |
-| Tombol ber-gradien atau bayangan berwarna | Klise | Tombol solid datar |
-| Statistik palsu atau pengisi ("100+ klien puas") | Tidak jujur | Hanya angka nyata dari data |
-| Testimoni/logo fiktif, foto stok orang tersenyum | Tidak jujur | Karya nyata, foto sendiri |
-| Salin teks generik: "passionate", "crafting digital experiences", "turning ideas into reality" | Kosong | Kalimat spesifik tentang apa yang dibuat |
-| Dekorasi tanpa fungsi (garis bergelombang, partikel, ilustrasi 3D acak) | Noise | Hapus |
-| Lebih dari satu warna aksen | Kacau | Satu aksen + netral |
-| Tema gelap berupa hitam murni `#000` dengan teks putih murni | Silau, kasar | Tema gelap hangat (bagian 3) |
+| Dilarang                                                                                       | Alasan                                 | Gantinya                                 |
+| ---------------------------------------------------------------------------------------------- | -------------------------------------- | ---------------------------------------- |
+| Gradien ungu-biru/pink, "aurora", blob blur di latar                                           | Penanda paling jelas desain AI generik | Warna datar, kertas hangat               |
+| Font Inter, Roboto, Poppins, Arial, system-ui sebagai identitas                                | Pasaran                                | Pasangan font di bagian 4                |
+| Hero tengah dengan judul besar + dua tombol + gambar mockup                                    | Template                               | Hero rata kiri, asimetris, editorial     |
+| Kartu berbayangan tebal, sudut sangat bulat (`rounded-3xl`) di mana-mana                       | Gaya "kartu SaaS"                      | Hairline border, radius kecil            |
+| Glassmorphism, `backdrop-blur` dekoratif                                                       | Usang dan berat                        | Permukaan solid                          |
+| Ikon emoji di judul atau poin (🚀 ✨ 💡)                                                       | Tidak profesional                      | Tanpa ikon, atau ikon garis tipis        |
+| Ikon dalam lingkaran berwarna di atas tiap kartu fitur                                         | Klise                                  | Penomoran `01`, `02`, teks saja          |
+| Grid 3 kolom "fitur" berisi ikon + judul + kalimat                                             | Klise                                  | Daftar berbaris dengan garis pemisah     |
+| Teks "gradient" pada judul                                                                     | Klise                                  | Warna tinta solid                        |
+| Animasi masuk berlebihan (bounce, flip, parallax berat)                                        | Mengganggu                             | Fade + geser 8 px, sekali                |
+| Badge neon, glow, bayangan berwarna                                                            | Murahan                                | Badge garis tipis, netral                |
+| Tombol ber-gradien atau bayangan berwarna                                                      | Klise                                  | Tombol solid datar                       |
+| Statistik palsu atau pengisi ("100+ klien puas")                                               | Tidak jujur                            | Hanya angka nyata dari data              |
+| Testimoni/logo fiktif, foto stok orang tersenyum                                               | Tidak jujur                            | Karya nyata, foto sendiri                |
+| Salin teks generik: "passionate", "crafting digital experiences", "turning ideas into reality" | Kosong                                 | Kalimat spesifik tentang apa yang dibuat |
+| Dekorasi tanpa fungsi (garis bergelombang, partikel, ilustrasi 3D acak)                        | Noise                                  | Hapus                                    |
+| Lebih dari satu warna aksen                                                                    | Kacau                                  | Satu aksen + netral                      |
+| Tema gelap berupa hitam murni `#000` dengan teks putih murni                                   | Silau, kasar                           | Tema gelap hangat (bagian 3)             |
 
 ---
 
@@ -53,43 +55,46 @@ Semua warna didefinisikan sebagai token. **Dilarang** memakai kode warna mentah 
 
 ### Palet Terang ("Kertas")
 
-| Token | Hex | Pemakaian |
-|---|---|---|
-| `--paper` | `#F6F3EC` | Latar halaman |
-| `--paper-raised` | `#FBF9F4` | Permukaan terangkat (kartu, input) |
-| `--paper-sunk` | `#ECE8DE` | Latar bagian berselang, blok kode |
-| `--ink` | `#17160F` | Teks utama, judul |
-| `--ink-soft` | `#4A4739` | Teks sekunder, paragraf panjang |
-| `--ink-faint` | `#6F6B5A` | Meta, label, placeholder |
-| `--line` | `#D9D4C5` | Garis tipis, pemisah |
-| `--line-strong` | `#B9B3A0` | Garis tegas, border input |
-| `--accent` | `#D4431F` | Permukaan aksen (tombol utama, penanda) |
-| `--accent-ink` | `#B8381A` | Teks/tautan aksen di atas kertas |
-| `--accent-wash` | `#F4DCD3` | Latar sorotan lembut |
-| `--on-accent` | `#FFF8F3` | Teks di atas `--accent` |
+| Token            | Hex       | Pemakaian                               |
+| ---------------- | --------- | --------------------------------------- |
+| `--paper`        | `#F6F3EC` | Latar halaman                           |
+| `--paper-raised` | `#FBF9F4` | Permukaan terangkat (kartu, input)      |
+| `--paper-sunk`   | `#ECE8DE` | Latar bagian berselang, blok kode       |
+| `--ink`          | `#17160F` | Teks utama, judul                       |
+| `--ink-soft`     | `#4A4739` | Teks sekunder, paragraf panjang         |
+| `--ink-faint`    | `#6F6B5A` | Meta, label, placeholder                |
+| `--line`         | `#D9D4C5` | Garis tipis, pemisah                    |
+| `--line-strong`  | `#B9B3A0` | Garis tegas, border input               |
+| `--accent`       | `#D4431F` | Permukaan aksen (tombol utama, penanda) |
+| `--accent-ink`   | `#B8381A` | Teks/tautan aksen di atas kertas        |
+| `--accent-wash`  | `#F4DCD3` | Latar sorotan lembut                    |
+| `--on-accent`    | `#FFF8F3` | Teks di atas `--accent`                 |
 
 ### Palet Gelap ("Arang Hangat")
+
 Bukan hasil membalik warna. Dirancang terpisah.
 
-| Token | Hex | Pemakaian |
-|---|---|---|
-| `--paper` | `#14130F` | Latar halaman |
-| `--paper-raised` | `#1C1B16` | Permukaan terangkat |
-| `--paper-sunk` | `#0F0E0B` | Latar bagian berselang |
-| `--ink` | `#EEEADF` | Teks utama |
-| `--ink-soft` | `#B9B4A3` | Teks sekunder |
-| `--ink-faint` | `#8A8574` | Meta, label |
-| `--line` | `#2E2C24` | Garis tipis |
-| `--line-strong` | `#47443A` | Garis tegas |
-| `--accent` | `#FF6A3D` | Permukaan aksen |
-| `--accent-ink` | `#FF8A63` | Teks/tautan aksen |
-| `--accent-wash` | `#35201A` | Latar sorotan lembut |
-| `--on-accent` | `#1A0D08` | Teks di atas aksen |
+| Token            | Hex       | Pemakaian              |
+| ---------------- | --------- | ---------------------- |
+| `--paper`        | `#14130F` | Latar halaman          |
+| `--paper-raised` | `#1C1B16` | Permukaan terangkat    |
+| `--paper-sunk`   | `#0F0E0B` | Latar bagian berselang |
+| `--ink`          | `#EEEADF` | Teks utama             |
+| `--ink-soft`     | `#B9B4A3` | Teks sekunder          |
+| `--ink-faint`    | `#8A8574` | Meta, label            |
+| `--line`         | `#2E2C24` | Garis tipis            |
+| `--line-strong`  | `#47443A` | Garis tegas            |
+| `--accent`       | `#FF6A3D` | Permukaan aksen        |
+| `--accent-ink`   | `#FF8A63` | Teks/tautan aksen      |
+| `--accent-wash`  | `#35201A` | Latar sorotan lembut   |
+| `--on-accent`    | `#1A0D08` | Teks di atas aksen     |
 
 ### Warna status (sangat hemat)
+
 Sukses `#3F7D4E` (gelap: `#6FBF84`), peringatan `#A86A12` (gelap: `#E0A24A`), galat `#B3261E` (gelap: `#FF8A80`). Hanya untuk pesan sistem dan formulir.
 
 ### Aturan pemakaian warna
+
 - Proporsi: **±90% netral (paper/ink)**, ±8% garis dan permukaan, **≤2% aksen**.
 - Aksen hanya untuk: tombol utama, tautan, indikator aktif, penanda hover, dan satu elemen sorotan per layar.
 - Kontras teks wajib **WCAG AA** (4,5:1 teks normal, 3:1 teks besar). Verifikasi dengan pemeriksa kontras sebelum menyetujui; ubah nilai token bila perlu, bukan ditoleransi.
@@ -101,28 +106,31 @@ Sukses `#3F7D4E` (gelap: `#6FBF84`), peringatan `#A86A12` (gelap: `#E0A24A`), ga
 ## 4. Tipografi
 
 ### Pasangan huruf
-| Peran | Font | Sumber | Catatan |
-|---|---|---|---|
-| **Display / judul** | **Instrument Serif** | `next/font/google` | Serif tipis berkarakter, dipakai untuk judul besar dan angka penomoran. Satu berat (Regular) + Italic untuk penekanan |
-| **Teks / UI** | **Geist Sans** | `next/font/google` | Bersih, tidak pasaran seperti Inter |
-| **Meta / label / kode** | **Geist Mono** | `next/font/google` | Label bagian, tanggal, tech stack, nomor |
+
+| Peran                   | Font                 | Sumber             | Catatan                                                                                                               |
+| ----------------------- | -------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| **Display / judul**     | **Instrument Serif** | `next/font/google` | Serif tipis berkarakter, dipakai untuk judul besar dan angka penomoran. Satu berat (Regular) + Italic untuk penekanan |
+| **Teks / UI**           | **Geist Sans**       | `next/font/google` | Bersih, tidak pasaran seperti Inter                                                                                   |
+| **Meta / label / kode** | **Geist Mono**       | `next/font/google` | Label bagian, tanggal, tech stack, nomor                                                                              |
 
 Aturan: maksimal **3 keluarga font**, dimuat lewat `next/font` dengan `display: swap` dan subset `latin`. Jangan menambah font lain.
 
 ### Skala (mobile → desktop)
-| Peran | Font | Ukuran | Line-height | Letter-spacing |
-|---|---|---|---|---|
-| Display (hero) | Instrument Serif | `clamp(2.75rem, 7vw, 6rem)` | 1.0 | -0.02em |
-| H1 halaman | Instrument Serif | `clamp(2.25rem, 5vw, 4rem)` | 1.05 | -0.015em |
-| H2 bagian | Instrument Serif | `clamp(1.75rem, 3.5vw, 2.75rem)` | 1.1 | -0.01em |
-| H3 | Geist Sans 600 | 1.25rem | 1.3 | -0.005em |
-| Isi (body) | Geist Sans 400 | 1rem – 1.0625rem | 1.65 | 0 |
-| Kecil | Geist Sans 400 | 0.875rem | 1.55 | 0 |
-| Label / meta | Geist Mono 400 | 0.75rem | 1.4 | +0.04em, huruf kapital |
+
+| Peran          | Font             | Ukuran                           | Line-height | Letter-spacing         |
+| -------------- | ---------------- | -------------------------------- | ----------- | ---------------------- |
+| Display (hero) | Instrument Serif | `clamp(2.75rem, 7vw, 6rem)`      | 1.0         | -0.02em                |
+| H1 halaman     | Instrument Serif | `clamp(2.25rem, 5vw, 4rem)`      | 1.05        | -0.015em               |
+| H2 bagian      | Instrument Serif | `clamp(1.75rem, 3.5vw, 2.75rem)` | 1.1         | -0.01em                |
+| H3             | Geist Sans 600   | 1.25rem                          | 1.3         | -0.005em               |
+| Isi (body)     | Geist Sans 400   | 1rem – 1.0625rem                 | 1.65        | 0                      |
+| Kecil          | Geist Sans 400   | 0.875rem                         | 1.55        | 0                      |
+| Label / meta   | Geist Mono 400   | 0.75rem                          | 1.4         | +0.04em, huruf kapital |
 
 ### Aturan teks
+
 - Lebar baris paragraf **maksimal 65 karakter** (`max-w-prose`).
-- Judul memakai *sentence case*, bukan Title Case atau SEMUA KAPITAL (kapital hanya untuk label mono).
+- Judul memakai _sentence case_, bukan Title Case atau SEMUA KAPITAL (kapital hanya untuk label mono).
 - Penekanan dalam judul memakai **Italic Instrument Serif**, bukan warna atau garis bawah warna-warni.
 - Tidak ada teks rata-tengah untuk paragraf. Rata tengah hanya untuk label pendek atau keadaan kosong.
 - Angka tanggal dan statistik memakai `font-variant-numeric: tabular-nums`.
@@ -133,28 +141,33 @@ Aturan: maksimal **3 keluarga font**, dimuat lewat `next/font` dengan `display: 
 ## 5. Tata Letak dan Spasi
 
 ### Grid
+
 - Kontainer maksimum **1200 px**, gutter samping 20 px (mobile), 32 px (tablet), 48 px (desktop).
 - Grid **12 kolom** pada desktop, 4 kolom pada mobile. Komposisi **asimetris**: label bagian di kolom 1–3, konten di kolom 4–12.
 - Konten teks panjang di kolom sempit (maks. 65ch); jangan meregangkan teks hingga lebar penuh.
 
 ### Skala spasi (kelipatan 4 px)
+
 `4 · 8 · 12 · 16 · 24 · 32 · 48 · 64 · 96 · 128`. Jarak antar-bagian halaman: **96 px (mobile 64 px)**. Jangan memakai nilai di luar skala.
 
 ### Bentuk
-| Elemen | Aturan |
-|---|---|
-| Radius | `2px` (input, badge), `4px` (kartu, tombol). **Tidak ada** radius > 8 px kecuali avatar bulat |
-| Border | 1 px `--line`; fokus/hover `--line-strong` |
-| Bayangan | **Tidak dipakai** pada tampilan publik. Elevasi lewat garis dan perbedaan permukaan. Pengecualian: dialog/lightbox boleh memakai satu bayangan lembut |
-| Pemisah bagian | Garis tipis penuh lebar + label bagian `01 / Projects` dalam mono |
+
+| Elemen         | Aturan                                                                                                                                                |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Radius         | `2px` (input, badge), `4px` (kartu, tombol). **Tidak ada** radius > 8 px kecuali avatar bulat                                                         |
+| Border         | 1 px `--line`; fokus/hover `--line-strong`                                                                                                            |
+| Bayangan       | **Tidak dipakai** pada tampilan publik. Elevasi lewat garis dan perbedaan permukaan. Pengecualian: dialog/lightbox boleh memakai satu bayangan lembut |
+| Pemisah bagian | Garis tipis penuh lebar + label bagian `01 / Projects` dalam mono                                                                                     |
 
 ### Struktur bagian (pola berulang)
+
 ```
 ──────────────────────────────────────────────  (garis tipis)
 01 / PROJECTS          Judul bagian dalam serif besar
 (mono, kecil)          Satu kalimat pengantar spesifik.
                        [konten]
 ```
+
 Penomoran bagian konsisten di semua halaman (`01`, `02`, ...). Ini menjadi tanda tangan visual situs.
 
 ---
@@ -162,46 +175,56 @@ Penomoran bagian konsisten di semua halaman (`01`, `02`, ...). Ini menjadi tanda
 ## 6. Komponen
 
 ### Tombol
-| Varian | Gaya |
-|---|---|
-| Primer | Latar `--accent`, teks `--on-accent`, radius 4 px, tinggi 44 px, padding 20 px, **tanpa bayangan**. Hover: gelapkan 6%, geser panah `→` 3 px |
-| Sekunder | Transparan, border 1 px `--line-strong`, teks `--ink`. Hover: latar `--paper-sunk` |
-| Teks/Tautan | Teks `--accent-ink` + garis bawah, ikon panah `↗` untuk tautan eksternal |
-Maksimal **satu tombol primer per layar**. Fokus keyboard: outline 2 px `--accent`, offset 3 px.
+
+| Varian                                                                                           | Gaya                                                                                                                                         |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Primer                                                                                           | Latar `--accent`, teks `--on-accent`, radius 4 px, tinggi 44 px, padding 20 px, **tanpa bayangan**. Hover: gelapkan 6%, geser panah `→` 3 px |
+| Sekunder                                                                                         | Transparan, border 1 px `--line-strong`, teks `--ink`. Hover: latar `--paper-sunk`                                                           |
+| Teks/Tautan                                                                                      | Teks `--accent-ink` + garis bawah, ikon panah `↗` untuk tautan eksternal                                                                     |
+| Maksimal **satu tombol primer per layar**. Fokus keyboard: outline 2 px `--accent`, offset 3 px. |
 
 ### Kartu Proyek
+
 - Tanpa bayangan. Border tipis `--line`, latar `--paper-raised`, radius 4 px.
 - Gambar rasio **4:3** (konsisten), `object-fit: cover`, tanpa overlay gradien.
 - Isi: label mono (kategori · tahun), judul serif/Geist 600, ringkasan maks. 2 baris, daftar tech stack sebagai teks mono dipisah `·` (bukan deretan badge berwarna).
 - Hover: border menjadi `--line-strong`, gambar zoom halus 1.02 (200 ms), panah `↗` muncul. Tidak ada kartu yang "melompat" atau berbayang.
 
 ### Daftar Baris (Pendidikan, Organisasi, Kepanitiaan, Sertifikat)
+
 Bukan kartu. Gunakan **baris editorial** dengan garis pemisah:
+
 ```
 2023 — Sekarang │ Universitas Semarang
 (mono, kolom 1–3) │ Sistem Informasi (serif/semibold)
                  │ Deskripsi singkat (ink-soft)
 ```
+
 Linimasa Pendidikan: garis vertikal 1 px `--line` dengan titik 8 px; titik aktif memakai `--accent`.
 
 ### Badge dan Tag
+
 Teks mono 12 px, border 1 px `--line`, radius 2 px, **tanpa latar berwarna**. Tag aktif pada filter: latar `--ink`, teks `--paper` (inversi, bukan aksen).
 
 ### Formulir
+
 - Label di atas input (bukan placeholder sebagai label). Input: latar `--paper-raised`, border 1 px `--line-strong`, radius 2 px, tinggi 44 px.
 - Fokus: border `--accent` + ring 2 px `--accent-wash`.
 - Galat: border + teks `--error`, pesan di bawah field, singkat dan spesifik ("Email belum valid", bukan "Terjadi kesalahan").
 
 ### Navigasi
+
 - Header tipis (64 px), latar `--paper` dengan garis bawah tipis saat di-scroll. **Tanpa blur kaca**.
 - Kiri: nama/monogram dalam serif. Kanan: tautan teks, pengalih bahasa `ID / EN` (mono), pengalih tema (ikon matahari/bulan garis tipis).
 - Tautan aktif: garis bawah 1 px `--accent`, bukan latar berwarna.
 - Mobile: panel penuh layar dengan tautan berukuran besar dalam serif.
 
 ### Lightbox Galeri
+
 Latar `--paper-sunk` 96% opak (gelap di tema gelap), foto di tengah, keterangan dalam mono di bawah, kontrol teks minimal (`← →`, `Esc`). Fokus terkunci, dapat dioperasikan keyboard.
 
 ### Keadaan Kosong, Memuat, Galat
+
 - Kosong: satu kalimat jujur + satu tindakan ("Belum ada proyek di kategori ini. Reset filter").
 - Memuat: skeleton datar `--paper-sunk` tanpa efek shimmer berkilau; boleh denyut opacity pelan.
 - 404: judul serif besar, satu kalimat, tautan kembali. Tanpa ilustrasi lucu.
@@ -211,21 +234,26 @@ Latar `--paper-sunk` 96% opak (gelap di tema gelap), foto di tengah, keterangan 
 ## 7. Halaman Kunci
 
 ### Hero (Home)
-- **Rata kiri**, asimetris. Judul display serif memuat satu kalimat spesifik tentang apa yang kamu bangun; kata kunci ditekankan dengan *italic*.
+
+- **Rata kiri**, asimetris. Judul display serif memuat satu kalimat spesifik tentang apa yang kamu bangun; kata kunci ditekankan dengan _italic_.
 - Di bawahnya: satu paragraf pendek (≤ 2 kalimat), tautan teks `Lihat project →` dan `Unduh CV ↓`, dan baris meta mono (lokasi, status ketersediaan, tahun).
 - Foto: potret dengan rasio 4:5, kolom kanan, tanpa bingkai warna-warni, tanpa blob. Boleh disertai caption mono kecil.
 - **Tidak ada** mockup perangkat, gelembung teknologi melayang, atau efek ketik berulang (typewriter).
 
 ### Tech Stack
+
 Daftar teks mono dalam grid rapat, dikelompokkan (Frontend / Backend / Tools) dengan label kecil. Tanpa logo berwarna-warni, tanpa bilah persentase kemahiran.
 
 ### Statistik Cepat
+
 Angka besar Instrument Serif + label mono, dipisah garis tipis vertikal. Hanya angka nyata dari database.
 
 ### Featured Projects
+
 Layout editorial: proyek pertama besar (lebar penuh), sisanya 2 kolom. Bukan carousel.
 
 ### Galeri
+
 Grid dengan rasio campuran rapi (masonry sederhana) dan jarak 8 px. Keterangan muncul di lightbox, bukan menimpa foto.
 
 ---
@@ -252,13 +280,13 @@ Grid dengan rasio campuran rapi (masonry sederhana) dan jarak 8 px. Keterangan m
 
 ## 10. Suara dan Salin Teks (Copy)
 
-| Prinsip | Contoh baik | Contoh buruk |
-|---|---|---|
-| Spesifik | "Membangun aplikasi ERP distribusi dengan Next.js dan Supabase." | "Passionate developer crafting digital experiences." |
-| Orang pertama, langsung | "Saya mahasiswa Sistem Informasi yang suka merapikan alur kerja yang berantakan." | "Seorang individu yang berdedikasi tinggi…" |
-| Singkat | Kalimat ≤ 20 kata | Paragraf pembuka berlapis |
-| Jujur | "Proyek kuliah, belum dipakai pengguna nyata." | "Solusi inovatif kelas enterprise." |
-| Tanpa klise | Hindari: *passionate, innovative, cutting-edge, seamless, leverage, journey* | |
+| Prinsip                 | Contoh baik                                                                       | Contoh buruk                                         |
+| ----------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| Spesifik                | "Membangun aplikasi ERP distribusi dengan Next.js dan Supabase."                  | "Passionate developer crafting digital experiences." |
+| Orang pertama, langsung | "Saya mahasiswa Sistem Informasi yang suka merapikan alur kerja yang berantakan." | "Seorang individu yang berdedikasi tinggi…"          |
+| Singkat                 | Kalimat ≤ 20 kata                                                                 | Paragraf pembuka berlapis                            |
+| Jujur                   | "Proyek kuliah, belum dipakai pengguna nyata."                                    | "Solusi inovatif kelas enterprise."                  |
+| Tanpa klise             | Hindari: _passionate, innovative, cutting-edge, seamless, leverage, journey_      |                                                      |
 
 - Bahasa Indonesia: baku-santai, bukan kaku, tanpa campuran Inggris yang tidak perlu. Bahasa Inggris: sederhana dan setara bobotnya, bukan terjemahan mentah.
 - Tombol berupa kata kerja: "Lihat project", "Kirim pesan", "Unduh CV".
@@ -269,6 +297,7 @@ Grid dengan rasio campuran rapi (masonry sederhana) dan jarak 8 px. Keterangan m
 ## 11. Panel Admin
 
 Admin adalah alat kerja, bukan pajangan. Tetap satu keluarga visual, tetapi **lebih padat dan netral**.
+
 - Pakai token yang sama, tetapi aksen lebih hemat (hanya tombol primer dan fokus).
 - Font: Geist Sans untuk semua; Instrument Serif hanya untuk judul halaman.
 - Tabel rapat: tinggi baris 44 px, garis tipis, tanpa zebra mencolok, aksi per baris berupa ikon garis dengan tooltip.
@@ -308,36 +337,78 @@ Letakkan di `src/app/globals.css`. Sesuaikan jika proyek memakai Tailwind v3 (pi
 }
 
 :root {
-  --paper: #F6F3EC;  --paper-raised: #FBF9F4;  --paper-sunk: #ECE8DE;
-  --ink: #17160F;    --ink-soft: #4A4739;      --ink-faint: #6F6B5A;
-  --line: #D9D4C5;   --line-strong: #B9B3A0;
-  --accent: #D4431F; --accent-ink: #B8381A;    --accent-wash: #F4DCD3;
-  --on-accent: #FFF8F3;
+  --paper: #f6f3ec;
+  --paper-raised: #fbf9f4;
+  --paper-sunk: #ece8de;
+  --ink: #17160f;
+  --ink-soft: #4a4739;
+  --ink-faint: #6f6b5a;
+  --line: #d9d4c5;
+  --line-strong: #b9b3a0;
+  --accent: #d4431f;
+  --accent-ink: #b8381a;
+  --accent-wash: #f4dcd3;
+  --on-accent: #fff8f3;
 }
 
 .dark {
-  --paper: #14130F;  --paper-raised: #1C1B16;  --paper-sunk: #0F0E0B;
-  --ink: #EEEADF;    --ink-soft: #B9B4A3;      --ink-faint: #8A8574;
-  --line: #2E2C24;   --line-strong: #47443A;
-  --accent: #FF6A3D; --accent-ink: #FF8A63;    --accent-wash: #35201A;
-  --on-accent: #1A0D08;
+  --paper: #14130f;
+  --paper-raised: #1c1b16;
+  --paper-sunk: #0f0e0b;
+  --ink: #eeeadf;
+  --ink-soft: #b9b4a3;
+  --ink-faint: #8a8574;
+  --line: #2e2c24;
+  --line-strong: #47443a;
+  --accent: #ff6a3d;
+  --accent-ink: #ff8a63;
+  --accent-wash: #35201a;
+  --on-accent: #1a0d08;
 }
 
-html { background: var(--paper); color: var(--ink); }
-body { font-family: var(--font-sans); font-size: 1rem; line-height: 1.65; }
+html {
+  background: var(--paper);
+  color: var(--ink);
+}
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.65;
+}
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
 }
 ```
 
 Pemuatan font (`src/app/layout.tsx`):
+
 ```ts
 import { Instrument_Serif, Geist, Geist_Mono } from "next/font/google";
 
-const display = Instrument_Serif({ subsets: ["latin"], weight: "400", style: ["normal", "italic"], variable: "--font-instrument-serif", display: "swap" });
-const sans = Geist({ subsets: ["latin"], variable: "--font-geist-sans", display: "swap" });
-const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono", display: "swap" });
+const display = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-instrument-serif",
+  display: "swap",
+});
+const sans = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist-sans",
+  display: "swap",
+});
+const mono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-geist-mono",
+  display: "swap",
+});
 // <html className={`${display.variable} ${sans.variable} ${mono.variable}`}>
 ```
 
@@ -378,6 +449,7 @@ Jika ada situasi yang tidak diatur DESIGN.md, pilih opsi yang lebih tenang dan l
 ```
 
 Tambahkan satu baris ke `AGENTS.md`:
+
 ```markdown
 - Semua keputusan visual mengikuti docs/DESIGN.md. Hindari pola pada Daftar Larangan (Anti-Slop).
 ```

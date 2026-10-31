@@ -1,0 +1,21 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Try Again",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "back": "Back"
+  },
+  "nav": {
+    "home": "Home",
+    "education": "Education",
+    "organization": "Organization",
+    "committee": "Committees",
+    "projects": "Projects",
+    "certificates": "Certifications",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  }
+}

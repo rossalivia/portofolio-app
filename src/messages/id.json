@@ -1,0 +1,21 @@
+{
+  "common": {
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan",
+    "retry": "Coba Lagi",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "delete": "Hapus",
+    "back": "Kembali"
+  },
+  "nav": {
+    "home": "Beranda",
+    "education": "Pendidikan",
+    "organization": "Organisasi",
+    "committee": "Kepanitiaan",
+    "projects": "Proyek",
+    "certificates": "Sertifikasi",
+    "gallery": "Galeri",
+    "contact": "Kontak"
+  }
+}

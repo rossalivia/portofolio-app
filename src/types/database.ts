@@ -1,0 +1,455 @@
+export type Json =
+  | string
+  | number
+  | boolean
+  | null
+  | { [key: string]: Json | undefined }
+  | Json[];
+
+export type ContentStatus = "draft" | "published";
+export type EducationType = "formal" | "informal";
+export type CertificateType = "certificate" | "award";
+export type MessageStatus = "unread" | "read" | "archived";
+
+export interface Database {
+  public: {
+    Tables: {
+      profiles: {
+        Row: {
+          id: string;
+          role: string;
+          full_name: string;
+          headline_id: string | null;
+          headline_en: string | null;
+          bio_id: string | null;
+          bio_en: string | null;
+          avatar_url: string | null;
+          email_public: string | null;
+          github_url: string | null;
+          linkedin_url: string | null;
+          instagram_url: string | null;
+          cv_url_id: string | null;
+          cv_url_en: string | null;
+          tech_stack: string[] | null;
+          location: string | null;
+          updated_at: string | null;
+        };
+        Insert: {
+          id: string;
+          role?: string;
+          full_name: string;
+          headline_id?: string | null;
+          headline_en?: string | null;
+          bio_id?: string | null;
+          bio_en?: string | null;
+          avatar_url?: string | null;
+          email_public?: string | null;
+          github_url?: string | null;
+          linkedin_url?: string | null;
+          instagram_url?: string | null;
+          cv_url_id?: string | null;
+          cv_url_en?: string | null;
+          tech_stack?: string[] | null;
+          location?: string | null;
+          updated_at?: string | null;
+        };
+        Update: {
+          id?: string;
+          role?: string;
+          full_name?: string;
+          headline_id?: string | null;
+          headline_en?: string | null;
+          bio_id?: string | null;
+          bio_en?: string | null;
+          avatar_url?: string | null;
+          email_public?: string | null;
+          github_url?: string | null;
+          linkedin_url?: string | null;
+          instagram_url?: string | null;
+          cv_url_id?: string | null;
+          cv_url_en?: string | null;
+          tech_stack?: string[] | null;
+          location?: string | null;
+          updated_at?: string | null;
+        };
+      };
+      educations: {
+        Row: {
+          id: string;
+          institution: string;
+          education_type: EducationType;
+          degree_id: string;
+          degree_en: string;
+          field_of_study: string;
+          start_date: string;
+          end_date: string | null;
+          is_current: boolean;
+          gpa: number | null;
+          description_id: string | null;
+          description_en: string | null;
+          logo_url: string | null;
+          sort_order: number;
+          status: ContentStatus;
+          created_at: string;
+          updated_at: string;
+          published_at: string | null;
+        };
+        Insert: {
+          id?: string;
+          institution: string;
+          education_type?: EducationType;
+          degree_id: string;
+          degree_en: string;
+          field_of_study: string;
+          start_date: string;
+          end_date?: string | null;
+          is_current?: boolean;
+          gpa?: number | null;
+          description_id?: string | null;
+          description_en?: string | null;
+          logo_url?: string | null;
+          sort_order?: number;
+          status?: ContentStatus;
+          created_at?: string;
+          updated_at?: string;
+          published_at?: string | null;
+        };
+        Update: {
+          id?: string;
+          institution?: string;
+          education_type?: EducationType;
+          degree_id?: string;
+          degree_en?: string;
+          field_of_study?: string;
+          start_date?: string;
+          end_date?: string | null;
+          is_current?: boolean;
+          gpa?: number | null;
+          description_id?: string | null;
+          description_en?: string | null;
+          logo_url?: string | null;
+          sort_order?: number;
+          status?: ContentStatus;
+          created_at?: string;
+          updated_at?: string;
+          published_at?: string | null;
+        };
+      };
+      organizations: {
+        Row: {
+          id: string;
+          name: string;
+          position_id: string;
+          position_en: string;
+          start_date: string;
+          end_date: string | null;
+          is_current: boolean;
+          description_id: string | null;
+          description_en: string | null;
+          logo_url: string | null;
+          sort_order: number;
+          status: ContentStatus;
+          created_at: string;
+          updated_at: string;
+          published_at: string | null;
+        };
+        Insert: {
+          id?: string;
+          name: string;
+          position_id: string;
+          position_en: string;
+          start_date: string;
+          end_date?: string | null;
+          is_current?: boolean;
+          description_id?: string | null;
+          description_en?: string | null;
+          logo_url?: string | null;
+          sort_order?: number;
+          status?: ContentStatus;
+          created_at?: string;
+          updated_at?: string;
+          published_at?: string | null;
+        };
+        Update: {
+          id?: string;
+          name?: string;
+          position_id?: string;
+          position_en?: string;
+          start_date?: string;
+          end_date?: string | null;
+          is_current?: boolean;
+          description_id?: string | null;
+          description_en?: string | null;
+          logo_url?: string | null;
+          sort_order?: number;
+          status?: ContentStatus;
+          created_at?: string;
+          updated_at?: string;
+          published_at?: string | null;
+        };
+      };
+      committees: {
+        Row: {
+          id: string;
+          event_name: string;
+          role_id: string;
+          role_en: string;
+          organizer: string;
+          start_date: string;
+          end_date: string | null;
+          description_id: string | null;
+          description_en: string | null;
+          documentation_url: string | null;
+          sort_order: number;
+          status: ContentStatus;
+          created_at: string;
+          updated_at: string;
+          published_at: string | null;
+        };
+        Insert: {
+          id?: string;
+          event_name: string;
+          role_id: string;
+          role_en: string;
+          organizer: string;
+          start_date: string;
+          end_date?: string | null;
+          description_id?: string | null;
+          description_en?: string | null;
+          documentation_url?: string | null;
+          sort_order?: number;
+          status?: ContentStatus;
+          created_at?: string;
+          updated_at?: string;
+          published_at?: string | null;
+        };
+        Update: {
+          id?: string;
+          event_name?: string;
+          role_id?: string;
+          role_en?: string;
+          organizer?: string;
+          start_date?: string;
+          end_date?: string | null;
+          description_id?: string | null;
+          description_en?: string | null;
+          documentation_url?: string | null;
+          sort_order?: number;
+          status?: ContentStatus;
+          created_at?: string;
+          updated_at?: string;
+          published_at?: string | null;
+        };
+      };
+      projects: {
+        Row: {
+          id: string;
+          title_id: string;
+          title_en: string;
+          slug: string;
+          summary_id: string;
+          summary_en: string;
+          description_id: string | null;
+          description_en: string | null;
+          category: string;
+          tech_stack: string[];
+          thumbnail_url: string | null;
+          images: string[];
+          live_demo_url: string | null;
+          repo_url: string | null;
+          is_featured: boolean;
+          year: number;
+          sort_order: number;
+          status: ContentStatus;
+          created_at: string;
+          updated_at: string;
+          published_at: string | null;
+        };
+        Insert: {
+          id?: string;
+          title_id: string;
+          title_en: string;
+          slug: string;
+          summary_id: string;
+          summary_en: string;
+          description_id?: string | null;
+          description_en?: string | null;
+          category: string;
+          tech_stack?: string[];
+          thumbnail_url?: string | null;
+          images?: string[];
+          live_demo_url?: string | null;
+          repo_url?: string | null;
+          is_featured?: boolean;
+          year: number;
+          sort_order?: number;
+          status?: ContentStatus;
+          created_at?: string;
+          updated_at?: string;
+          published_at?: string | null;
+        };
+        Update: {
+          id?: string;
+          title_id?: string;
+          title_en?: string;
+          slug?: string;
+          summary_id?: string;
+          summary_en?: string;
+          description_id?: string | null;
+          description_en?: string | null;
+          category?: string;
+          tech_stack?: string[];
+          thumbnail_url?: string | null;
+          images?: string[];
+          live_demo_url?: string | null;
+          repo_url?: string | null;
+          is_featured?: boolean;
+          year?: number;
+          sort_order?: number;
+          status?: ContentStatus;
+          created_at?: string;
+          updated_at?: string;
+          published_at?: string | null;
+        };
+      };
+      certificates: {
+        Row: {
+          id: string;
+          title_id: string;
+          title_en: string;
+          type: CertificateType;
+          issuer: string;
+          issued_date: string;
+          expiry_date: string | null;
+          credential_id: string | null;
+          credential_url: string | null;
+          image_url: string | null;
+          description_id: string | null;
+          description_en: string | null;
+          sort_order: number;
+          status: ContentStatus;
+          created_at: string;
+          updated_at: string;
+          published_at: string | null;
+        };
+        Insert: {
+          id?: string;
+          title_id: string;
+          title_en: string;
+          type?: CertificateType;
+          issuer: string;
+          issued_date: string;
+          expiry_date?: string | null;
+          credential_id?: string | null;
+          credential_url?: string | null;
+          image_url?: string | null;
+          description_id?: string | null;
+          description_en?: string | null;
+          sort_order?: number;
+          status?: ContentStatus;
+          created_at?: string;
+          updated_at?: string;
+          published_at?: string | null;
+        };
+        Update: {
+          id?: string;
+          title_id?: string;
+          title_en?: string;
+          type?: CertificateType;
+          issuer?: string;
+          issued_date?: string;
+          expiry_date?: string | null;
+          credential_id?: string | null;
+          credential_url?: string | null;
+          image_url?: string | null;
+          description_id?: string | null;
+          description_en?: string | null;
+          sort_order?: number;
+          status?: ContentStatus;
+          created_at?: string;
+          updated_at?: string;
+          published_at?: string | null;
+        };
+      };
+      galleries: {
+        Row: {
+          id: string;
+          image_url: string;
+          caption_id: string | null;
+          caption_en: string | null;
+          event_date: string | null;
+          alt_text: string;
+          related_type: string | null;
+          related_id: string | null;
+          sort_order: number;
+          status: ContentStatus;
+          created_at: string;
+          updated_at: string;
+          published_at: string | null;
+        };
+        Insert: {
+          id?: string;
+          image_url: string;
+          caption_id?: string | null;
+          caption_en?: string | null;
+          event_date?: string | null;
+          alt_text: string;
+          related_type?: string | null;
+          related_id?: string | null;
+          sort_order?: number;
+          status?: ContentStatus;
+          created_at?: string;
+          updated_at?: string;
+          published_at?: string | null;
+        };
+        Update: {
+          id?: string;
+          image_url?: string;
+          caption_id?: string | null;
+          caption_en?: string | null;
+          event_date?: string | null;
+          alt_text?: string;
+          related_type?: string | null;
+          related_id?: string | null;
+          sort_order?: number;
+          status?: ContentStatus;
+          created_at?: string;
+          updated_at?: string;
+          published_at?: string | null;
+        };
+      };
+      messages: {
+        Row: {
+          id: string;
+          name: string;
+          email: string;
+          subject: string;
+          message: string;
+          status: MessageStatus;
+          ip_hash: string | null;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          name: string;
+          email: string;
+          subject: string;
+          message: string;
+          status?: MessageStatus;
+          ip_hash?: string | null;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          name?: string;
+          email?: string;
+          subject?: string;
+          message?: string;
+          status?: MessageStatus;
+          ip_hash?: string | null;
+          created_at?: string;
+        };
+      };
+    };
+  };
+}
